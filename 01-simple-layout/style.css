@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+body {
+    background: rgb(210, 224, 224);
+    font-family: Lato;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+.header {
+      background: white;
+      text-align: center;
+      padding: 50px;
+      margin-bottom: 0;
+  }
+
+.header-title {
+    font-size: 3rem;
+  }
+
+.navbar {
+    background: rgb(68, 63, 63);
+    position: sticky;
+    top: 0;
+  }
+
+.navlist {
+    list-style: none;
+}
+
+.navitem {
+    display: inline-block;
+    padding: 20px;
+  }
+
+.navlink {
+    text-decoration: none;
+    color: white;
+}
+
+.navitem:hover {
+    background: rgb(21, 22, 22);
+}
+
+.right {
+    float: right;
+}
+
+.content {
+    width: 74%;
+    float: left;
+}
+
+.blog {
+    background: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.blog-title {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.blog-desc {
+    font-weight: bold;
+}
+
+.blog-img {
+    background: gray;
+    text-align: center;
+    padding: 150px;
+    margin: 10px auto;
+}
+
+.side {
+    width: 24%;
+    float: right;
+}
+
+.about {
+    background: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.about-img {
+    background: gray;
+    text-align: center;
+    padding: 50px;
+}
+
+.recent {
+    background: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.post {
+    background: gray;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 10px;
+}
+
+.follow {
+    background: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+
+.footer {
+    clear: both;
+    background: rgb(49, 48, 48);
+    text-align: center;
+    padding: 30px;
+    color: white;
+}

@@ -1,0 +1,57 @@
+:root {
+    font-size: 10px;
+}
+
+@include display-md {
+    :root {
+        font-size: 16px;
+    }
+    //Home
+    .nav-btn {
+        visibility: hidden;
+    }
+    .nav {
+        visibility: visible;
+    }
+    header {
+        background: $primary-color;
+    }
+
+    //About
+    .page-text {
+        font-size: 1.3rem;
+    }
+
+    //Projects
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+    }
+
+    //Contact
+    .contact-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        // justify-content: center;
+    }
+}
+
+@include display-lg {
+    .projects {
+        // display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        // gap: 2em;
+    }
+    .contact-items {
+        // display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        // justify-content: center;
+    }
+}
+
+@include display-xl {
+    :root {
+        font-size: 32px;
+    }
+}

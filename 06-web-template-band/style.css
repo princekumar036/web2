@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.nav {
+    background: #333;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+}
+
+.nav-list {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav-item:hover {
+    background: #777;
+    color: black;
+}
+
+.search {
+    float: right;
+    padding: auto 30px;
+}
+
+.fas {
+    color: white;
+    margin: auto 20px;
+}
+
+.search:hover {
+    background: #f30;
+}
+
+[class="nav-item h"] {
+    display: none;
+}
+
+.hero {
+    background: url("images/band.jpg") center/cover;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.hero-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-desc {
+    margin-bottom: 10%;
+}
+
+.band {
+    height: 100vh;
+    padding: 10em 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.band-title {
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+
+.band-subtitle {
+    color: gray;
+    font-style: italic ;
+    font-weight: lighter;
+}
+
+.band-text {
+    text-align: justify;
+    font-size: 0.9rem;
+    margin-bottom: 5em;
+}
+
+.band-gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.band-gallery-tile {
+    font-size: smaller;
+    background-color: cornsilk;
+    padding: 2em;
+    margin: 3em;
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.band-gallery-tile-img {
+    width: 100%;
+    margin-top: 2em;
+}
+
+.tour {
+    background: #111;
+    color: white;
+    padding: 10em 15em;
+}
+
+
+.tour-title {
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+
+.tour-subtitle {
+    color: gray;
+    font-style: italic ;
+    font-weight: lighter;
+}
+
+.tour-text {
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+.tour-dates {
+    background: white;
+    color: black;
+    text-align: left;
+    font-size: 0.8em;
+    margin-top: 3em;
+}
+
+.tour-month {
+    list-style: none;
+    padding: 0.7em;
+    border: 1px solid #aaa;
+}
+
+.tour-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em auto;
+    text-align: left;
+}
+
+.tour-gallery-tile {
+    background: white;
+    color: black;
+    width: 30%;
+}
+
+.tour-gallary-tile-img {
+    width: 100%;
+}
+
+.tour-gallery-tile-title {
+    padding: 0 1em;
+}
+
+.tour-gallery-tile-text {
+    padding: 0 1em;
+    font-size: 0.9em;
+}
+
+.tour-gallery-tile-button {
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.8em;
+    margin: 1em;
+    border: none;
+}
+
+.tour-gallery-tile-button:hover {
+    background: #666;
+}
+
+.contact {
+    padding: 10em 15em 0 15em;
+}
+
+.contact-title {
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+
+.contact-subtitle {
+    color: gray;
+    font-style: italic ;
+    font-weight: lighter;
+    margin-bottom: 3em;
+}
+
+.contact-address {
+    float: left;
+    text-align: left;
+    width: 50%;
+}
+
+.contact-form {
+    float: right;
+    width: 50%;
+    margin-bottom: 10em;
+}
+
+.contact-form-input {
+    width: 100%;
+    padding: 1em;
+}
+
+[placeholder="Name"] {
+    width: 50%;
+    float: left;
+}
+
+[placeholder="Email"] {
+    width: 50%;
+    float: left;
+}
+
+.contact-form-button {
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.8em;
+    margin: 1em;
+    border: none;
+    text-align: right;
+}
+
+.contact-form-button:hover {
+    background: #666;
+}
+
+.contact-map {
+    margin-left: -15em;
+}
+
+.contact-map-img {
+    /* width: 100%; */
+    /* object-fit: cover; */
+}
+
+.footer {
+    padding: 5em;
+}
+
+
+.fab {
+    font-size: larger;
+    color: #333;
+}
+
+.footer-text {
+    margin-top: 1em;
+    color: #666;
+}
+
+.footer a {
+    color: #666;
+}

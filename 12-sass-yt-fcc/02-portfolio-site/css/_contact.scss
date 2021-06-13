@@ -1,0 +1,29 @@
+.body-contact {
+    @include page-head;
+}
+
+.contact {
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+
+    &-items {
+        background: $primary-color;
+        text-align: center;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        padding: 8em 4em;
+
+        &-item {
+            margin-bottom: 1em;
+        }
+    }
+
+    p {
+        color: $secondary-color;
+        font-size: 1.3rem;
+    }
+
+    
+}
+

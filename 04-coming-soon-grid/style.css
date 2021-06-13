@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: url("images/jurrasic-bg.png") bottom/cover no-repeat;
+  font-family: poppins;
+  color: white;
+  align-content: center;
+  text-align: center;
+  
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+        ". l ."
+        ". h ."
+        "f f f";
+}
+
+
+.logo {
+  grid-area: l;
+  
+}
+
+.logo-img {
+  width: 200px;
+}
+
+.hero {
+  grid-area: h;
+  align-self: center;
+}
+
+.hero-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer {
+  grid-area: f;
+  align-self: end;
+  justify-self: end;
+}
+
+.footer-text {
+  /* font-size: 0.7rem; */
+  padding: 0 10px 10px 0;
+}

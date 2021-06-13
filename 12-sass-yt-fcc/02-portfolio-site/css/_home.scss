@@ -1,0 +1,25 @@
+.body-home {
+    overflow: hidden;
+}
+.home {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    &-name {
+        font-size: 5rem;
+        padding: 0.1em;
+        // border-bottom: 2px solid set-text-color($primary-color);
+    }
+    &-name-last {
+        color: $secondary-color;
+        font-weight: bold;
+    }
+}
+
+.subtitle {
+    margin-top: 0.5em;
+}

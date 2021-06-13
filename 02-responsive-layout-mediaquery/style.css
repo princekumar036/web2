@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ddd;
+  font-family: Lato;
+}
+
+[class*="-title"] {
+  margin-bottom: 10px;
+}
+
+.header {
+  background: #1abc9c;
+  text-align: center;
+  padding: 70px;
+  
+}
+
+.navbar {
+  background: #333;
+}
+
+.navitem {
+  list-style: none;
+}
+
+.navlink {
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navlink:hover {
+  background: #111;
+}
+
+.blog {
+  background: white;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.blog-img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.about {
+  background: white;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+.about-img {
+  width: 100%;
+  /* height: 200px; */
+  margin: 20px 0;
+}
+
+.posts {
+  background: white;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+.posts-img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  margin: 20px 0;
+}
+
+.follow {
+  background: white;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+.follow-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.follow-link {
+  display: inline-block;
+  margin: 30px 0;
+}
+
+.fab {
+  font-size: 30px;
+}
+
+.footer {
+  background: #444;
+  padding: 30px;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .navitem {
+    /* float: left; */
+    display: inline-block;
+  }
+  .navlink {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    float: left;
+    width: 75%;
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+  .side {
+    float: right;
+    width: 25%;
+    padding-left: 5px;
+    padding-right: 10px;
+    /* margin-top: 8px;  the content box and side box don't align correctly */
+  }
+  .footer {
+    clear: both;
+  }
+}

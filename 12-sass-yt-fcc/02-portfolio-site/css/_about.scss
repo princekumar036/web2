@@ -1,0 +1,39 @@
+.body-about {
+    @include page-head;
+
+    .jobs {
+        background-color: $primary-color;
+        padding: 5em 0;
+    }
+
+    .job {
+        width: 70%;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-bottom: 2em;
+        padding: 1em;
+        background: lighten($color: $primary-color, $amount: 10%);
+        border-bottom: 5px solid $secondary-color;
+
+        line-height: 1.5;
+
+        &-year {
+            color: $secondary-color;
+            font-size: 1.5rem;
+        }
+
+        &-position {
+            margin-bottom: 1.2em;
+        }
+    }
+
+    .social{
+        display: flex;
+        flex-direction: column;
+        transform: translate(-0.8em, 0);
+    }
+    .copyright {
+        transform: rotate(90deg) translate(-3.5em, -4.8em);
+        
+    }
+}

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 10px;
+}
+
+header {
+    background: #f8f8f8;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+    border: solid 1px black;
+}
+
+.title {
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #143774;
+}
+
+.subtitle {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #1792d2;
+    text-transform: uppercase;
+}
+
+nav {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #707070;
+    text-transform: uppercase;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070;
+    padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1792d2;
+}
+
+.current-page {
+    border-bottom: 2px solid #707070;
+}
+
+.current-page:hover {
+    color: #707070;
+}
+
+@media screen and (max-width: 765px) {
+    .container {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin: 0.5em 0;
+    }
+}

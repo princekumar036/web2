@@ -1,0 +1,205 @@
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+    line-height: 1.4;
+    font-size: 1rem;
+
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+            ". nav nav nav nav ."
+            ". hero hero hero side ."
+            ". hero hero hero side ."
+            ". bxs bxs bxs bxs ."
+            ". info info info info ."
+            ". pf pf pf pf ."
+            "ftr ftr ftr ftr ftr ftr";
+}
+
+.btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.5rem;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+/*  */
+
+nav {
+    grid-area: nav;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+
+    list-style: none;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    background: var(--light);
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: bold;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+}
+
+nav a:hover {
+    background: var(--dark);
+    color: var(--light);
+}
+
+.hero {
+    grid-area: hero;
+
+    background: url("https://via.placeholder.com/400x300/999") center/cover;
+
+    padding: 7rem 3rem;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    box-shadow: var(--shadow);
+}
+
+.hero-title {
+    font-size: 3rem;
+    
+}
+
+.side {
+    grid-area: side;
+    min-width: 100%;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.side-box {
+    width: 100%;
+    background: var(--light);
+    text-align: center;
+    padding: 3rem 1rem;
+    box-shadow: var(--shadow);
+}
+
+.side-price {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.boxes {
+    grid-area: bxs;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+.box {
+    background: var(--light);
+    padding: 3rem 1rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.fas {
+    font-size: 4rem;
+}
+
+.info {
+    grid-area: info;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    background: var(--light);
+    box-shadow: var(--shadow);
+    padding: 3rem;
+}
+
+.info div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: space-evenly; */
+}
+
+
+.portfolio {
+    grid-area: pf;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+
+footer {
+    grid-area: ftr;
+    background: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+                "nav"
+                "hero"
+                "side"
+                "bxs"
+                "info"
+                "pf"
+                "ftr";
+    }
+    .boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    body {
+        grid-template-areas: 
+                ". nav ."
+                ". hero ."
+                ". side ."
+                ". bxs ."
+                ". info ."
+                ". pf  ."
+                "ftr ftr ftr";
+    }
+    .boxes {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .portfolio {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

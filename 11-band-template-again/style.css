@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+img{
+    width: 100%;
+}
+body {
+    font-family: Lato, sans-serif;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+
+/* ======= NAVIGATION ======= */
+nav {
+    background-color: black;
+    color: white;
+
+    font-family: 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+
+    box-shadow: 0 0 5px 0 black;
+}
+nav li {
+    list-style: none;
+    display: inline-block;
+}
+nav a {
+    color: white;    
+    padding: 1em;
+}
+nav a:hover {
+    background-color: gray;
+}
+.search-link, .bars-link{
+    padding: 1em 2em;
+}
+.search-link:hover {
+    background-color: red;
+}
+.bars-li {display: none;}
+
+@media screen and (max-width: 600px) {
+    .inactive, .search-li {display: none;}
+    .bars-li {display: inline-block;}
+    .hero *:not(img) { display: none; }
+}
+
+/* ======= MAIN ======= */
+section {
+    padding: 4em 1em;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+h2 {
+    font: 300 2rem 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 1em;
+}
+h6 {
+    font-size: 1.025rem;
+    font-style: italic;
+    font-weight: 300;
+    color: gray;
+    margin-bottom: 3em;
+}
+button {
+    background: black;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    font-size: 1rem;
+    font-family: Lato, sans-serif;
+}
+
+/* ===== HERO ==== */
+.hero {
+    position: relative;
+    color: white;
+}
+.hero-text {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.hero h1 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+.hero p { font-weight: lighter;}
+
+/* ===== BAND ===== */
+.band-text{
+    text-align: justify; 
+    margin-bottom: 3em;
+}
+.band .gallery{
+    margin: 0 auto;
+}
+.band .card {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+.band .card p {
+    margin-bottom: 1em;
+}
+
+/* ===== TOUR ===== */
+section.tour {
+    background: black; 
+    color: white;
+    /* padding: 2em; */
+}
+.calender {
+    margin-bottom: 2em;
+}
+.calender p {
+    display: inline-block;
+    width: 100%;
+    background: white;
+    color: gray;
+    padding: 0.5em 1em;
+    text-align: left;
+    margin: 0;
+    border-bottom: 1px solid gray;
+}
+.calender span {
+    background: #f44336;
+    color: white;
+    padding: 0.125em 0.5em;
+    margin-left: 2em;
+}
+.tour .card {
+    background: white;
+    text-align: left;
+    color: black;
+    margin-bottom: 2em;
+}
+.tour .card img {
+    margin-bottom: 1em;
+}
+.tour .card p, button {
+    margin: 0 0 1rem 1em;
+}
+.tour-city, .tour-date {
+    font-weight: bold;
+}
+.tour-date {
+    opacity: 0.5;
+}
+
+/* ===== CONTACT ====== */
+.address {
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 2em;
+}
+.address p {
+    font-size: 1.225rem;
+}
+.address i {
+    padding-right: 1.5em;
+}
+.form input {
+    display: block;
+    width: 100%;
+    padding: .5em;
+}
+.form input[placeholder*="Message"] {
+    margin: .5em 0 1em;
+}
+.form button {
+    float: right;
+}
+.map-img {
+    max-height: 70vh;
+    object-fit: cover;
+    object-position: center;
+}
+/* ======= FOOTER ======= */
+footer {
+    padding: 2em;
+    color: gray;
+    font-size: 2rem;
+}
+.social {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+footer .fa {
+    font-size: 1.5rem;
+}
+footer a {
+    color: gray;
+}
+footer a:hover {
+    color: blue;
+}
+
+/* ======= MEDIA QUERY ======= */
+@media screen and (min-width: 600px) {
+    .gallery {
+        display: flex;
+        gap: 2em;
+    }
+    .band .card {
+        max-width: 10em;
+    }
+    .contact-info {
+        display: flex;
+        justify-content: space-between;
+    }
+    .address {width: 50%;}
+    .form {width: 50%;}
+    .form-1 {display: flex; gap: 0.5em;}
+}

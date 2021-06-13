@@ -1,0 +1,198 @@
+/* 
+    headings h2  segoe UI, black 30px (letter spacing 4px)
+    subheading h6 lato 15px italic lightgray
+    text black lato 15px
+    calender months color #757575 
+*/
+
+/* @import url(""); */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+img{
+    width: 100%;
+}
+
+/* ======= TYPOGRAPGY ======= */
+
+body {
+    margin: 0;
+    font-family: Lato, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font: 400 1.225rem 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    text-align: initial;
+    margin: 0.5em 0;
+}
+h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.fa-bars{
+    color: white;
+}
+
+.fa-bars:hover{
+    cursor: pointer;
+}
+
+h2 {
+    font: 300 2rem 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h6 {
+    font-size: 1.025rem;
+    font-style: italic;
+    font-weight: 300;
+    color: gray;
+}
+
+/* ======= LAYOUT ======= */
+header{
+    background: black;
+    color: white;
+    padding: 0 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-bars {
+    /* float: left; */
+}
+
+.area {
+    margin: 0 auto;
+    padding: 4em 1em;
+}
+.area h2 {
+    margin-bottom: 1em;
+}
+.area h6 {
+    margin-bottom: 1em;
+}
+button {
+    background: black;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    font-size: 1rem;
+    font-family: Lato, sans-serif;
+}
+
+.band-text {
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 3em;
+}
+.card img {
+    width: 50%;
+    margin: 1em 0 2em;
+}
+
+.area-tour {
+    background: black;
+    color: white;
+}
+
+.calender {
+    margin-bottom: 2em;
+}
+.calender p {
+    display: inline-block;
+    width: 100%;
+    background: white;
+    color: gray;
+    padding: 0.5em 1em;
+    text-align: left;
+    margin: 0;
+    border-bottom: 1px solid gray;
+}
+.calender span {
+    background: #f44336;
+    color: white;
+    padding: 0.125em 0.5em;
+    margin-left: 2em;
+}
+
+.card-tour {
+    background: white;
+    text-align: left;
+    color: black;
+    margin-bottom: 1em;
+}
+.card-tour img {
+    margin-bottom: 1em;
+}
+.card-tour h4 {
+    opacity: 0.5;
+}
+.card-tour h3, h4, p, button {
+    margin: 0 0 1rem 1em;
+}
+
+.address {
+    text-align: left;
+}
+.form {
+
+}
+.form input {
+    display: block;
+    width: 100%;
+    padding: .5em;
+}
+.form input[placeholder*="Message"] {
+    margin: .5em 0 1em;
+}
+.form button {
+    float: right;
+}
+
+footer {
+    color: gray;
+}
+.social {
+    margin-bottom: 1em;
+}
+
+
+
+
+
+
+
+
+nav {
+    clear: both;
+    display: none;
+}
+
+
+
+@media screen and (min-width: 600px) {
+    .area * {
+        max-width: 800px;
+        margin: unset auto;
+    }
+    .card-gallery {
+        display: flex;
+        justify-content: space-around;
+    }
+    .tour-gallery {
+        display: flex;
+        gap: 3em;
+    }
+    .address {float: left;}
+    .form {float: right;}
+}
